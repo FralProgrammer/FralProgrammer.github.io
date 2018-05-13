@@ -4,7 +4,32 @@
         This is DRY code used through out my website
 */
 
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .NandISection {
+        display: block;
+        background-color: black;
+    }
+
     .H_Link {
-        display: inline-block;
+        display: inline;
         list-style: none;
+    }
+
+    .H_Link li {
+        display: inline-block;
+    }
+
+    .Float_L {
+        float: left;
+        display: inline-block;
+        width: 50%;
+    }
+
+    .M-Font {
+        font-family: 'century gothic';
+        color: white;
     }
