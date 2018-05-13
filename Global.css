@@ -23,13 +23,17 @@
         display: inline-block;
     }
 
-    .Float_L {
-        float: left;
-        display: inline-block;
-        width: 50%;
+    .Float_R {
+        float: right;
+        margin-right: 4%;
     }
 
     .M-Font {
         font-family: 'century gothic';
         color: white;
+    }
+
+    .Button li{
+        margin: 10px;
+        padding-top: 5px;
     }
