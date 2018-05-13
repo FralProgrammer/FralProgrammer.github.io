@@ -1,0 +1,10 @@
+/*
+    Global CSS
+    -
+        This is DRY code used through out my website
+*/
+
+    .H_Link {
+        display: inline-block;
+        list-style: none;
+    }
