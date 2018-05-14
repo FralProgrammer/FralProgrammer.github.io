@@ -1,7 +1,7 @@
 /*
-    Global CSS
-    -
-        This is DRY code used through out my website
+
+--Global CSS
+
 */
 
     body {
@@ -9,31 +9,86 @@
         padding: 0;
     }
 
-    .NandISection {
-        display: block;
-        background-color: black;
-    }
-
-    .H_Link {
-        display: inline;
-        list-style: none;
-    }
-
-    .H_Link li {
-        display: inline-block;
-    }
-
-    .Float_R {
-        float: right;
-        margin-right: 4%;
-    }
-
-    .M-Font {
+    .Century {
         font-family: 'century gothic';
-        color: white;
     }
 
-    .Button li{
-        margin: 10px;
-        padding-top: 5px;
-    }
+/*
+
+--Mobile CSS
+
+*/
+    /* Header And Navagation */
+
+@media only screen and (max-width: 320px){    
+        .HeadContainer {
+            width: 100%;
+            min-height: 50px;
+            background-color: black;
+            color: white;
+        }
+
+        .Logo {
+            display: inline-block;
+            width: 50%;
+            font-size: 2em;
+        }
+
+        .Mobile-Button {
+            float: right;
+            font-size: 2em !important;
+            padding-left: 5%;
+            padding-right: 5%;
+            background: #11234c;
+            border-radius: 0 0 30px 30px;
+        }
+
+        #Main-Nav {
+            display: none;
+            background: #11234c;
+        }
+
+        .Main-Nav ul {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .Main-Nav > ul > li {
+            list-style: none;
+            display: inline-block;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .Main-Nav > ul > li::before {
+            content: 'O--O-';
+            color: black;
+        }
+
+        .Main-Nav > ul > li::after {
+            content: '-O--O';
+            color: black;
+        }
+
+        .MainImages {
+            width:100%;
+        }
+
+        .Headline {
+            position: fixed;
+            bottom: 0;
+            background: #11234c;
+            width: 50%;
+            right: 0;
+            margin: 10px;
+            padding: 10px;
+        }
+}
+/*
+
+--Desktop CSS
+
+*/
