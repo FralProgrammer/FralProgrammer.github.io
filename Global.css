@@ -61,7 +61,7 @@
             width: 50%;
             }
 
-        .Menu ul
+        .Menu ul li
             {
             list-style: none;
             position: relative;
@@ -78,5 +78,41 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) 
     {
+        .HeadContainer
+        {
+        background: #131313;
+        color: yellow;
+        width: 100%;
+        display: flex;
+        padding-bottom: 40px;
+        }
 
+    .Name
+        {
+        width: 50%;
+        height: auto;
+        padding-left: 15px;
+        display: inline-block;
+        font-size: 4em;
+        box-sizing: border-box;
+        }
+
+    .Menu
+        {
+        display: inline-block;
+        width: 50%;
+        }
+
+    .Menu ul li
+        {
+        list-style: none;
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+        font-size: 1.5em;
+        height: 100%;
+        align-items: center;
+        }
     }
