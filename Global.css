@@ -61,7 +61,7 @@
             width: 50%;
             }
 
-        .Menu ul li
+        .Menu > ul
             {
             list-style: none;
             position: relative;
@@ -103,7 +103,7 @@
         width: 50%;
         }
 
-    .Menu ul li
+    .Menu > ul
         {
         list-style: none;
         position: relative;
