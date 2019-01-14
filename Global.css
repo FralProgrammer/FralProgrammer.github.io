@@ -63,6 +63,7 @@
 
         .Menu > ul
             {
+            width: 100%;
             list-style: none;
             position: relative;
             display: flex;
@@ -105,6 +106,7 @@
 
     .Menu > ul
         {
+        width: 100%;
         list-style: none;
         position: relative;
         display: flex;
