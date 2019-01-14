@@ -10,8 +10,17 @@
     <script src="Menus.js"></script>
     <title>Nigel Wilkins - My Portfolio</title>
 
-    <script>
-
+    <script type="text/javascript">
+        $(window).on('scroll', function(){
+            if($(window).scrollTop()) {
+                $('.HeadContainer').addClass('small');
+            }
+            else {
+                $('.HeadContainer').removeClass('small');
+            }
+        }
+        
+        )
     </script>
 </head>
 <body>
@@ -31,6 +40,8 @@
             </ul>
         </div>
    </header>
+
+   <section style="height: 800px;"></section>
 
 </body>
 </html>
