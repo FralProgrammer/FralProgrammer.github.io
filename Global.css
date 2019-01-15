@@ -260,4 +260,24 @@
         height: 100%;
         align-items: center;
         }
+
+    .ProjectSection 
+        {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: block;
+        margin-top: -78px;
+        }
+
+    .ProjectBackground 
+        {
+        width: 100%;
+        background: yellow;
+        height: 500px;
+        transform: skewY(-6deg);
+        position: relative;
+        top: 0;
+        left: 0;
+        }
     }
