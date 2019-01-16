@@ -4,23 +4,46 @@
 
 */
 
-@import url('https://fonts.googleapis.com/css?family=Coiny');
 
-    body {
+/*
+    Fonts
+*/
+    @import url('https://fonts.googleapis.com/css?family=Coiny|Montserrat|ZCOOL+QingKe+HuangYou');
+    
+    .HeadFont /*Used For Logos and Headers*/
+        {
+        font-family: 'Coiny', cursive;
+        }
+
+    .MainFont /*Used For Reading*/
+        {
+        font-family: 'ZCOOL QingKe HuangYou', cursive;
+        }
+
+    .SecondFont /*Used For Actions - DEFAULT*/
+        {
+        font-family: 'Montserrat', sans-serif;
+        }
+
+    body 
+        {
+        font-family: 'Montserrat', sans-serif;
         width: 100%;
         margin: 0;
         padding: 0;
         background: black;
-    }
-
-    .Century {
-        font-family: 'century gothic';
-    }
+        }
 
     img
         {
         width: 100%;
         height: auto;    
+        }
+
+    a
+        {
+        text-decoration: none;
+        color: inherit;
         }
 
     .ProjectSection 
@@ -43,8 +66,62 @@
         left: 0;
         }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) 
+    /*
+    HIRE ME SECTION
+    */
+
+    .Hireme
+        {
+        position: relative;
+        }
+
+    .HireArea
+        {
+        position: absolute;
+        top: 30%;
+        z-index: 1;
+        width: 100%;   
+        }
+
+    .HireArea_Description
+        {
+        font-size: 2em;
+        color: yellow;
+        background: black;
+        padding: 20px;
+        border-radius: 40px;
+        display: inline-block;
+        margin-left: 20%;
+        text-align: right;
+        }
+
+    .HireArea_CTA
+        {
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+        margin: auto;
+        padding: 27px;
+        box-sizing: border-box;
+        }
+
+    .HM_Action
+        {
+        background: black;
+        color: white;
+        min-width: 45%;
+        text-align: center;
+        font-size: 1.9em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+        border-radius: 48px;
+        border: 2px solid yellow;
+        white-space: nowrap;   
+        }
+
+/*  */
+@media only screen and (max-width: 992px) 
     {
         .HeadContainer
             {
@@ -86,145 +163,57 @@
             height: 100%;
             align-items: center;
             }
+
+ /*
+    HIRE ME SECTION
+    */
+
+    .HireArea
+        {
+        position: relative;
+        width: 100%;   
+        }
+
+    .HireArea_Description
+        {
+        position: relative;
+        font-size: 2em;
+        color: yellow;
+        background: black;
+        padding: 20px;
+        display: block;
+        text-align: center;
+        }
+
+    .HireArea_CTA
+        {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: auto;
+        padding: 27px;
+        box-sizing: border-box;
+        }
+
+    .HM_Action
+        {
+        background: black;
+        color: white;
+        min-width: 45%;
+        text-align: center;
+        font-size: 1.9em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+        border-radius: 48px;
+        border: 2px solid yellow;
+        white-space: nowrap;   
+        }
     } 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) 
-    {
-        .HeadContainer
-            {
-            background: #131313;
-            color: yellow;
-            width: 100%;
-            display: inline-block;
-            padding-bottom: 40px;
-            }
-
-        .Name
-            {
-            width: 100%;
-            height: auto;
-            padding: 20px;
-            display: inline-block;
-            font-size: 4em;
-            font-family: 'Coiny', cursive;
-            box-sizing: border-box;
-            text-align: center;
-            }
-
-        .Menu
-            {
-            display: inline-block;
-            width: 100%;
-            }
-
-        .Menu > ul
-            {
-            width: 100%;
-            list-style: none;
-            position: relative;
-            display: flex;
-            justify-content: space-evenly;
-            margin: 0;
-            padding: 0;
-            font-size: 1.5em;
-            height: 100%;
-            align-items: center;
-            }    
-    } 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) 
-    {
-        .HeadContainer
-            {
-            background: #131313;
-            color: yellow;
-            width: 100%;
-            display: inline-block;
-            padding-bottom: 40px;
-            }
-
-        .Name
-            {
-            width: 100%;
-            height: auto;
-            padding: 20px;
-            display: inline-block;
-            font-size: 4em;
-            font-family: 'Coiny', cursive;
-            box-sizing: border-box;
-            text-align: center;
-            }
-
-        .Menu
-            {
-            display: inline-block;
-            width: 100%;
-            }
-
-        .Menu > ul
-            {
-            width: 100%;
-            list-style: none;
-            position: relative;
-            display: flex;
-            justify-content: space-evenly;
-            margin: 0;
-            padding: 0;
-            font-size: 1.5em;
-            height: 100%;
-            align-items: center;
-            }
-    } 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) 
-    {
-        .HeadContainer
-            {
-            background: #131313;
-            color: yellow;
-            width: 100%;
-            display: inline-block;
-            padding-bottom: 40px;
-            }
-
-        .Name
-            {
-            width: 100%;
-            height: auto;
-            padding: 20px;
-            display: inline-block;
-            font-size: 4em;
-            font-family: 'Coiny', cursive;
-            box-sizing: border-box;
-            text-align: center;
-            }
-
-        .Menu
-            {
-            display: inline-block;
-            width: 100%;
-            }
-
-        .Menu > ul
-            {
-            width: 100%;
-            list-style: none;
-            position: relative;
-            display: flex;
-            justify-content: space-evenly;
-            margin: 0;
-            padding: 0;
-            font-size: 1.5em;
-            height: 100%;
-            align-items: center;
-            }
-    } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) 
+@media only screen and (min-width: 992px) 
     {
         .HeadContainer
         {
@@ -236,6 +225,7 @@
         display: flex;
         padding-bottom: 40px;
         transition: 1s;
+        z-index: 5;
         }
 
         .HeadContainer.small
@@ -248,6 +238,7 @@
         display: flex;
         padding-bottom: 0;
         transition: 1s;
+        z-index: 5;
         }
 
     .Name
@@ -280,6 +271,7 @@
         height: 100%;
         align-items: center;
         }
+
 
 
     }
