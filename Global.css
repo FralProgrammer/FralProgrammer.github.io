@@ -66,6 +66,18 @@
         left: 0;
         }
 
+    @keyframes NameBanner
+        {
+            0%
+                {
+                width: 0%;
+                }
+            100%    
+                {
+                Width: 100%;
+                }
+        }
+
     /*
     HIRE ME SECTION
     */
@@ -132,16 +144,37 @@
             padding-bottom: 40px;
             }
 
-        .Name
+        .NameBox
             {
-            width: 100%;
+            display: flex;
+            }
+
+        .NameFirst
+            {
+            width: 50%;
             height: auto;
             padding: 20px;
             display: inline-block;
-            font-size: 4em;
+            font-size: 2em;
             font-family: 'Coiny', cursive;
             box-sizing: border-box;
             text-align: center;
+            border-bottom: 5px solid yellow;
+            margin-bottom: 20px;
+            }
+
+        .Name
+            {
+            width: 50%;
+            height: auto;
+            padding: 20px;
+            display: inline-block;
+            font-size: 2em;
+            font-family: 'Coiny', cursive;
+            box-sizing: border-box;
+            text-align: center;
+            border-bottom: 5px solid white;
+            margin-bottom: 20px;
             }
 
         .Menu
@@ -241,15 +274,50 @@
         z-index: 5;
         }
 
-    .Name
+    .NameBox
         {
+        position: relative;
         width: 50%;
         height: auto;
         padding-left: 15px;
         display: inline-block;
-        font-size: 4em;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 3em;
+        }
+
+    .NameFirst
+        {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        height: auto;
+        padding-left: 15px;
+        display: inline-block;
         font-family: 'Coiny', cursive;
         box-sizing: border-box;
+        text-align: center;
+        }
+
+    .Name
+        {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #131313;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        height: auto;
+        padding-left: 15px;
+        display: inline-block;
+        font-family: 'Coiny', cursive;
+        box-sizing: border-box;
+        box-shadow: 4px -3px 0px;
+        animation: NameBanner 5s ease-in-out alternate infinite;
         }
 
     .Menu
