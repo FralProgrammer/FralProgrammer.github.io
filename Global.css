@@ -1,13 +1,13 @@
 /*
 
---Global CSS
+    Global CSS
 
 */
 
+/* ------------------------------------------------------------------*/
 
-/*
-    Fonts
-*/
+
+    /*  Global Fonts */
     @import url('https://fonts.googleapis.com/css?family=Coiny|Montserrat|ZCOOL+QingKe+HuangYou');
     
     .HeadFont /*Used For Logos and Headers*/
@@ -25,10 +25,12 @@
         font-family: 'Montserrat', sans-serif;
         }
 
-    body 
+    /* ------- */    
+    html, body 
         {
         font-family: 'Montserrat', sans-serif;
         width: 100%;
+        overflow-x: hidden;
         margin: 0;
         padding: 0;
         background: black;
@@ -37,7 +39,8 @@
     img
         {
         width: 100%;
-        height: auto;    
+        height: auto;
+        display: block;  
         }
 
     a
@@ -52,7 +55,6 @@
         height: auto;
         position: relative;
         display: block;
-        margin-top: -78px;
         }
 
     .ProjectBackground 
@@ -60,10 +62,6 @@
         width: 100%;
         background: yellow;
         height: 500px;
-        transform: skewY(-6deg);
-        position: relative;
-        top: 0;
-        left: 0;
         }
 
     @keyframes NameBanner
@@ -71,10 +69,14 @@
             0%
                 {
                 width: 0%;
+                padding-left: 0px;
+                padding-right: 0px;
                 }
             100%    
                 {
                 Width: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
                 }
         }
 
@@ -132,8 +134,114 @@
         white-space: nowrap;   
         }
 
-/*  */
-@media only screen and (max-width: 992px) 
+    /*
+        SECTION THEMES
+    */
+    
+    .Section-Full
+        {
+        width: 100%;
+        min-height: 300px;
+        display: block;
+        box-sizing: border-box;
+        padding: 5px;
+        padding-top: 89px;
+        }
+
+    .Header-Responsive
+        {
+        display: inline-block;
+        padding: 20px;
+        font-size: 2em;
+        font-weight: bold;
+        }
+
+    .Darkness
+        {
+        background: black;
+        }
+
+    .Darkness_Header
+        {
+        border-bottom: black 2px solid; 
+        border-right: black 15px solid;
+        background: #171717;
+        color: white;      
+        }
+
+    .Lightening
+        {
+        background: yellow;
+        }
+
+    .Lightening_Header
+        {
+        border-bottom: yellow 2px solid; 
+        border-right: yellow 15px solid;
+        background: #171717;
+        color: white;
+        }
+
+/* ------------------------------------------------------------------*/
+
+/*
+    Small Phones
+*/
+
+/* ------------------------------------------------------------------*/
+@media only screen and (max-width: 500px)
+    {
+        .HeadContainer
+            {
+            background: #131313;
+            color: yellow;
+            width: 100%;
+            display: inline-block;
+            padding-bottom: 40px;
+            }
+
+        .NameBox
+            {
+            display: flex;
+            }
+
+    .NameFirst
+        {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        display: inline-block;
+        font-size: 1.3em;
+        font-family: 'Coiny', cursive;
+        box-sizing: border-box;
+        text-align: center;
+        border-bottom: 5px solid yellow;
+        margin-bottom: 20px;
+        }
+
+    .Name
+        {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        display: inline-block;
+        font-size: 1.3em;
+        font-family: 'Coiny', cursive;
+        box-sizing: border-box;
+        text-align: center;
+        border-bottom: 5px solid white;
+        margin-bottom: 20px;
+        }
+    }
+
+/* ------------------------------------------------------------------*/
+
+/*
+    Tablets
+*/
+
+/* ------------------------------------------------------------------*/
+@media only screen and (min-width: 500px) 
     {
         .HeadContainer
             {
@@ -203,17 +311,27 @@
 
     .HireArea
         {
+        position: absolute;
+        width: 100%;
+        top: 25%;
+        z-index: 1;
+        }
+
+    .HireArea_Background
+        {
         position: relative;
-        width: 100%;   
+        top: 0;
+        left: 0;
         }
 
     .HireArea_Description
         {
         position: relative;
+        width: 50%;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 1);
         font-size: 2em;
         color: yellow;
-        background: black;
-        padding: 20px;
         display: block;
         text-align: center;
         }
@@ -245,7 +363,13 @@
     } 
 
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* ------------------------------------------------------------------*/
+
+/*
+    Laptops and Desktops
+*/
+
+/* ------------------------------------------------------------------*/
 @media only screen and (min-width: 992px) 
     {
         .HeadContainer
@@ -298,8 +422,11 @@
         padding-left: 15px;
         display: inline-block;
         font-family: 'Coiny', cursive;
+        font-size: inherit;
         box-sizing: border-box;
         text-align: center;
+        border-bottom: 0;
+        margin-bottom: 0;
         }
 
     .Name
@@ -315,9 +442,12 @@
         padding-left: 15px;
         display: inline-block;
         font-family: 'Coiny', cursive;
+        font-size: inherit;
         box-sizing: border-box;
         box-shadow: 4px -3px 0px;
         animation: NameBanner 5s ease-in-out alternate infinite;
+        border-bottom: none;
+        margin-bottom: 0;
         }
 
     .Menu
