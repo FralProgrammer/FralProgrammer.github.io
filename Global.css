@@ -26,15 +26,21 @@
         }
 
     /* ------- */    
-    html, body 
+    html 
+        {
+        width: 100%;
+        overflow-x: hidden;
+        }
+
+    body 
         {
         font-family: 'Montserrat', sans-serif;
         width: 100%;
-        overflow-x: hidden;
         margin: 0;
         padding: 0;
         background: black;
         }
+
 
     img
         {
@@ -370,7 +376,7 @@
 */
 
 /* ------------------------------------------------------------------*/
-@media only screen and (min-width: 985px) 
+@media only screen and (min-width: 992px) 
     {
         .HeadContainer
         {
