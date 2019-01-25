@@ -1,5 +1,11 @@
+
 $(document).ready(function(){
-    $("#MainMenu").click(function(){
-        $("#Main-Nav").slideToggle("slow");
-    });
+
+    //Mobile Menu Controls 
+        $("#MobileMenu").click(function(){
+            $(".Menu").toggle();
+        });
+
+    //Animate Hire Me Section
+
 });

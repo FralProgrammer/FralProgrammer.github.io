@@ -89,6 +89,31 @@
     /*
     HIRE ME SECTION
     */
+    @keyframes HireMeBackground
+    {
+        from
+            {
+            -webkit-filter: blur(0);
+            filter: blur(0);
+            }
+        to    
+            {
+            -webkit-filter: blur(4px);
+            filter: blur(4px);
+            }
+    }
+
+    @keyframes HireMeFront
+    {
+        from
+            {
+            opacity: 0;
+            }
+        to    
+            {
+            opacity: 100%;
+            }
+    }
 
     .Hireme
         {
@@ -146,12 +171,13 @@
     
     .Section-Full
         {
+        position: relative;
         width: 100%;
         min-height: 300px;
         display: block;
         box-sizing: border-box;
-        padding: 5px;
-        padding-top: 89px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         }
 
     .Header-Responsive
@@ -203,7 +229,6 @@
             color: yellow;
             width: 100%;
             display: inline-block;
-            padding-bottom: 40px;
             }
 
         .NameBox
@@ -222,7 +247,6 @@
         box-sizing: border-box;
         text-align: center;
         border-bottom: 5px solid yellow;
-        margin-bottom: 20px;
         }
 
     .Name
@@ -236,7 +260,44 @@
         box-sizing: border-box;
         text-align: center;
         border-bottom: 5px solid white;
-        margin-bottom: 20px;
+        }
+
+    .MobileMenu
+        {
+        
+        }
+
+    #MobileMenu 
+        {
+        min-width: 100%;
+        text-align: center;
+        display: block;
+        font-size: 1.5em;
+        font-weight: bold;
+        background: black;
+        padding: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+        }
+
+    .Menu
+        {
+        display: none;
+        }
+
+    .Menu > ul 
+        {
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+        font-size: 1.5em;
+        margin: 0;
+        padding: 0;
+        }
+
+    .Menu > ul > li 
+        {
+        padding: 10px;
         }
     }
 
@@ -291,9 +352,14 @@
             margin-bottom: 20px;
             }
 
+        .MobileMenu
+            {
+            display: none;
+            }
+
         .Menu
             {
-            display: inline-block;
+            display: inline-block !important;
             width: 100%;
             }
 
@@ -311,7 +377,7 @@
             align-items: center;
             }
 
- /*
+    /*
     HIRE ME SECTION
     */
 
@@ -321,6 +387,9 @@
         width: 100%;
         top: 25%;
         z-index: 1;
+        animation: HireMeFront 2s ease-in;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
         }
 
     .HireArea_Background
@@ -328,6 +397,9 @@
         position: relative;
         top: 0;
         left: 0;
+        animation: HireMeBackground 3s ease-in;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
         }
 
     .HireArea_Description
@@ -365,6 +437,106 @@
         border-radius: 48px;
         border: 2px solid yellow;
         white-space: nowrap;   
+        }
+
+    /*
+        Section Anchor
+    */
+    .Anchor
+        {
+        position: absolute;
+        top: -129px;
+        }
+
+    .ContentContain
+        {
+        width: 100%;
+        min-height: 400px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        }
+
+    .Content
+        {
+        position: relative;
+        flex: 40%;
+        height: 500px;
+        margin: 5px;
+        background: black;
+        box-shadow: 0px 0px 3px white;
+        box-sizing: border-box;
+        }
+
+    .ContentOverlay
+        {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+        }
+
+    .Content:hover .ContentOverlay
+        {
+        height: 100%;
+        }
+
+    .ContentDescription
+        {
+        width: 100%;
+        height: 100%;
+        color: black;
+        font-size: 20px;
+        overflow: hidden;
+        }
+
+    .ContentTitle
+        {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: black;
+        color: yellow;
+        }
+
+    .AboutContent
+        {
+        padding: 10px;
+        margin: 0;
+        }
+
+    .SkillUsed
+        {
+        position: absolute;
+        bottom: 0;
+        padding: 10px;
+        margin: 0;
+        background: black;
+        color: white;      
+        }
+
+    /*Projects*/
+    .FA
+        {
+        background-image: url(./Photos/FilteredArtsImage.JPG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+
+    .BSJ
+        {
+        background-image: url(./Photos/Bornspired-Journey.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
         }
     } 
 

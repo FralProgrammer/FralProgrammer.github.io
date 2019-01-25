@@ -1,112 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="Global.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="Menus.js"></script>
-    <title>Nigel Wilkins - My Portfolio</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Nigel Wilkins | Fral Programmer - My Portfolio</title>
+        <link rel="stylesheet" href="Global.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="Menus.js"></script>
 
-    <script type="text/javascript">
-        $(window).on('scroll', function(){
-            if($(window).scrollTop()) {
-                $('.HeadContainer').addClass('small');
-            }
-            else {
-                $('.HeadContainer').removeClass('small');
-            }
-        }
-        
-        )
-    </script>
-</head>
-<body>
-        <!-- 
-            Navagation And Information Section: For Links and Informational Headlines
+            <!--
+                Inline Functions
+                    Header/Menu Shrink During Scroll
+                
+                External Functions
+                    Mobile Menu Control -> (Menu.js)
+            -->
+        <script type="text/javascript">
+                $(window).on('scroll', function(){
+                    if($(window).scrollTop()) {
+                        $('.HeadContainer').addClass('small');
+                    }
+                    else {
+                        $('.HeadContainer').removeClass('small');
+                    }
+                });
+        </script>
+
+    </head>
+
+
+    <body>
+            <!-- 
+                Navagation And Information Section: For Links and Informational Headlines
+            -->
+        <header class="HeadContainer Century">
+            <div class="NameBox">
+                <div class="NameFirst">
+                    Nigel Wilkins
+                </div>
+                <div class="Name">
+                    Fral Programmer
+                </div>
+            </div>
+            <div class="MobileMenu">
+                <div id="MobileMenu">
+                    Menu
+                </div>
+            </div>
+            <div class="Menu">
+                <ul>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Skillset">Skillset</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#AboutMe">About Me</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!--
+                HIRE ME SECTION - Call To Action
         -->
-   <header class="HeadContainer Century">
-        <div class="NameBox">
-            <div class="NameFirst">
-                Nigel Wilkins
+        <section class="Hireme">
+            <div class="HireArea_Background">
+                <picture>
+                    <source srcset="img_smallflower.jpg" media="(max-width: 400px)">
+                    <source srcset="./Photos/FacebookBanner.jpg">
+                    <img src="./Photos/FacebookBanner.jpg">
+                </picture>
+
             </div>
-            <div class="Name">
-                Fral Programmer
+            <div class="HireArea">
+                <div class="HireArea_Description">
+                    Looking For Work.
+                    <br>
+                    Hire Me
+                </div>
+
+                <div class="HireArea_CTA">
+                    <div class="Button HM_Action MainFont">
+                        Hire <br> Me
+                    </div>
+
+                    <div class="Button HM_Action MainFont">
+                        Free <br> Consultation
+                    </div> 
+                </div>
             </div>
-        </div>
-        <div class="Menu">
-            <ul>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Skillset">Skillset</a></li>
-                <li><a href="#Services">Services</a></li>
-                <li><a href="#AboutMe">About Me</a></li>
-            </ul>
-        </div>
-   </header>
+        </section>
 
-   <!--
-        HIRE ME SECTION - Call To Action
-   -->
-   <section class="Hireme">
-    <div class="HireArea_Background">
-        <img src="./Photos/FacebookBanner.jpg">
-    </div>
-    <div class="HireArea">
-        <div class="HireArea_Description">
-            Looking For Work.
-            <br>
-            Hire Me
-        </div>
+        <!--
+            PROJECT SECTION
+        -->
+        <section class="Section-Full Lightening">
+                <span id="Projects" class="Anchor"></span> <!--Anchor Fix For Sticky Menu Issue-->
+                <div class="Header-Responsive Darkness_Header">
+                    My Projects
+                </div>
 
-        <div class="HireArea_CTA">
-            <div class="Button HM_Action MainFont">
-                Hire <br> Me
-            </div>
+                <div class="ContentContain">
+                    <div class="Content FA">
+                        <div class="ContentOverlay">
+                            <div class="ContentDescription">
+                                <h3 class="ContentTitle">Filtered Arts</h3>
+                                <p class="AboutContent">
+                                    Filtered Arts is a Multi Media Entertainment
+                                    company specializing in clean entertainment
+                                    for all ages to enjoy. Plenty of growth coming
+                                    to this amazing business!
+                                </p>
+                                <p class="SkillUsed">
+                                    #HTML5, #CSS3, #JQuery, #Wordpress, #PHP
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Content BSJ">
+                        <div class="ContentOverlay">
+                            <div class="ContentDescription">
+                                <h3 class="ContentTitle">Bornspired Journey</h3>
+                                <p class="AboutContent">
+                                    
+                                </p>
+                                <p class="SkillUsed">
+                                    #HTML5, #CSS3, #JQuery, #Wordpress, #PHP
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Content"></div>
+                    <div class="Content"></div>
+                </div>
+        </section>
 
-            <div class="Button HM_Action MainFont">
-                Free <br> Consultation
-            </div> 
-        </div>
-    </div>
-   </section>
+        <!--
+            SKILLSET SECTION
+        -->
+        <section class="Section-Full Darkness">
+                <span id="Skillset" class="Anchor"></span> <!--Anchor Fix For Sticky Menu Issue-->
+                <div class="Header-Responsive Lightening_Header">
+                    My Skillset
+                </div>
 
-   <!--
-       PROJECT SECTION
-   -->
-   <section id="Projects" class="Section-Full Lightening">
-        <div class="Header-Responsive Darkness_Header">
-            My Projects
-        </div>
-   </section>
 
-   <!--
-       SKILLSET SECTION
-   -->
-   <section id="Skillset" class="Section-Full Darkness">
-        <div class="Header-Responsive Lightening_Header">
-            My Skillset
-        </div>
-   </section>
+        </section>
 
-   <!--
-       SERVICES SECTION
-   -->
-   <section id="Services" class="Section-Full Lightening">
-        <div class="Header-Responsive Darkness_Header">
-            Services I Offer
-        </div>
-   </section>
+        <!--
+            SERVICES SECTION
+        -->
+        <section class="Section-Full Lightening">
+                <span id="Services" class="Anchor"></span> <!--Anchor Fix For Sticky Menu Issue-->
+                <div class="Header-Responsive Darkness_Header">
+                    Services I Offer
+                </div>
+        </section>
 
-   <!--
-       ABOUT ME SECTION
-   -->
-   <section id="AboutMe" class="Section-Full Darkness">
-        <div class="Header-Responsive Lightening_Header">
-            Learn About Me
-        </div>
-   </section>
+        <!--
+            ABOUT ME SECTION
+        -->
+        <section class="Section-Full Darkness">
+                <span id="AboutMe" class="Anchor"></span> <!--Anchor Fix For Sticky Menu Issue-->
+                <div class="Header-Responsive Lightening_Header">
+                    Learn About Me
+                </div>
+        </section>
 
-</body>
+    </body>
 </html>
