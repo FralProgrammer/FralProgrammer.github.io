@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Nigel Wilkins | Fral Programmer - My Portfolio</title>
-        <link rel="stylesheet" href="Global.css">
+        <link rel="stylesheet" href="./Style Development/Style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="Menus.js"></script>
@@ -65,7 +65,7 @@
         <section class="Hireme">
             <div class="HireArea_Background">
                 <picture>
-                    <source srcset="img_smallflower.jpg" media="(max-width: 400px)">
+                    <source srcset="./Photos/500PXTemp.jpg" media="(max-width: 800px)">
                     <source srcset="./Photos/FacebookBanner.jpg">
                     <img src="./Photos/FacebookBanner.jpg">
                 </picture>
@@ -101,33 +101,32 @@
 
                 <div class="ContentContain">
                     <div class="Content FA">
-                        <div class="ContentOverlay">
+                        <img src="Photos/Portfo-FA.jpg">
+                        <div class="ContentInfo">
+                            <div class="ContentTitle">
+                                Filtered Arts
+                            </div>
+                            <div class="ContentSkillSet">
+                                #HTML5 #CSS3 #PHP #Wordpress #JQuery
+                            </div>
                             <div class="ContentDescription">
-                                <h3 class="ContentTitle">Filtered Arts</h3>
-                                <p class="AboutContent">
-                                    Filtered Arts is a Multi Media Entertainment
-                                    company specializing in clean entertainment
-                                    for all ages to enjoy. Plenty of growth coming
-                                    to this amazing business!
-                                </p>
-                                <p class="SkillUsed">
-                                    #HTML5, #CSS3, #JQuery, #Wordpress, #PHP
-                                </p>
+                                Web Design & Web Development
                             </div>
                         </div>
                     </div>
                     <div class="Content BSJ">
-                        <div class="ContentOverlay">
-                            <div class="ContentDescription">
-                                <h3 class="ContentTitle">Bornspired Journey</h3>
-                                <p class="AboutContent">
-                                    
-                                </p>
-                                <p class="SkillUsed">
-                                    #HTML5, #CSS3, #JQuery, #Wordpress, #PHP
-                                </p>
+                        <img src="Photos/Portfo-BSJ.jpg">
+                        <div class="ContentInfo">
+                                <div class="ContentTitle">
+                                    Bornspired Journey
+                                </div>
+                                <div class="ContentSkillSet">
+                                    #HTML5 #CSS3 #PHP #Wordpress #JQuery
+                                </div>
+                                <div class="ContentDescription">
+                                    Web Design & Web Development
+                                </div>
                             </div>
-                        </div>
                     </div>
                     <div class="Content"></div>
                     <div class="Content"></div>
@@ -143,7 +142,167 @@
                     My Skillset
                 </div>
 
+                <div class="SkillArea MainFont">
+                    <!--Open FrontEnd Modal-->
+                    <div id="FrontEnd" class="Skill_Button">FrontEnd Development</div>
 
+                    <!-- FrontEnd Modal -->
+                    <div id="FrontEndModal" class="Full-Modal">
+                        <!-- FrontEnd Modal Content -->
+                        <div class="Modal-Content">
+                            <span class="Modal_close">&times;</span>
+                            <div class="Modal_Header">
+                                Frontend Coding Skills
+                            </div>
+                            <div class="Modal_SkillBox">
+                                <div class="Modal_SkillName">
+                                    HTML5
+                                </div>
+                                <div class="Modal_SkillContainer">
+                                    <div class="Modal_SkillLevel Level-100">100%</div>
+                                </div>
+
+                                <div class="Modal_SkillName">
+                                    CSS3
+                                </div>
+                                <div class="Modal_SkillContainer">
+                                    <div class="Modal_SkillLevel Level-100">100%</div>
+                                </div>
+
+                                <div class="Modal_SkillName">
+                                    Javascript
+                                </div>
+                                <div class="Modal_SkillContainer">
+                                    <div class="Modal_SkillLevel Level-85">85%</div>
+                                </div>
+
+                                <div class="Modal_SkillName">
+                                    JQuery
+                                </div>
+                                <div class="Modal_SkillContainer">
+                                    <div class="Modal_SkillLevel Level-80">80%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Open BackEnd Modal-->
+                    <div id="BackEnd" class="Skill_Button">BackEnd Development</div>
+                    
+                    <!-- BackEnd Modal -->
+                    <div id="BackEndModal" class="Full-Modal">
+                        <!-- BackEnd Modal Content -->
+                        <div class="Modal-Content">
+                            <span class="Modal_close">&times;</span>
+                            <div class="Modal_Header">
+                                Backend Coding Skills
+                            </div>
+                            <div class="Modal_SkillBox">
+                                <div class="Modal_SkillName">
+                                    PHP
+                                </div>
+                                <div class="Modal_SkillContainer">
+                                    <div class="Modal_SkillLevel Level-30">30%</div>
+                                </div>
+
+                                <div class="Modal_SkillName">
+                                    Python
+                                </div>
+                                <div class="Modal_SkillContainer">
+                                    <div class="Modal_SkillLevel Level-10">10%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Open Team Modal-->
+                    <div id="FrameWork" class="Skill_Button">FrameWorks</div>
+                    
+                    <!-- Team Modal -->
+                    <div id="FrameWorkModal" class="Full-Modal">
+                        <!-- Team Modal Content -->
+                        <div class="Modal-Content">
+                            <span class="Modal_close">&times;</span>
+                            <div class="Modal_Header">
+                                Frameworks
+                            </div>
+                            <div class="Modal_SkillBox">
+                                <div class="Modal_SkillName">
+                                    Bootstap
+                                </div>
+                                <div class="Modal_SkillContainer">
+                                    <div class="Modal_SkillLevel Level-100">100%</div>
+                                </div>
+
+                                <div class="Modal_SkillName">
+                                    AngularJs
+                                </div>
+                                <div class="Modal_SkillContainer">
+                                    <div class="Modal_SkillLevel Level-80">80%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Open CMS Modal-->
+                    <div id="CMS" class="Skill_Button">Content Manageagement System</div>
+                    
+                    <!-- CMS Modal -->
+                    <div id="CMSModal" class="Full-Modal">
+                            <!-- CMS Modal Content -->
+                            <div class="Modal-Content">
+                                <span class="Modal_close">&times;</span>
+                                <div class="Modal_Header">
+                                    Content Manageagement Systems
+                                </div>
+                                <div class="Modal_SkillBox">
+                                    <div class="Modal_SkillName">
+                                        Wordpress
+                                    </div>
+                                    <div class="Modal_SkillContainer">
+                                        <div class="Modal_SkillLevel Level-60">60%</div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <!--Open Team Modal-->
+                    <div id="Team" class="Skill_Button">Working With A Team</div>
+                    
+                    <!-- Team Modal -->
+                    <div id="TeamModal" class="Full-Modal">
+                            <!-- Team Modal Content -->
+                            <div class="Modal-Content">
+                                <span class="Modal_close">&times;</span>
+                                <div class="Modal_Header">
+                                    Working With Teams
+                                </div>
+                                <div class="Modal_SkillBox">
+                                    <div class="Modal_SkillName">
+                                        Communication
+                                    </div>
+                                    <div class="Modal_SkillContainer">
+                                        <div class="Modal_SkillLevel Level-100">100%</div>
+                                    </div>
+
+                                    <div class="Modal_SkillName">
+                                        Turn Around
+                                    </div>
+                                    <div class="Modal_SkillContainer">
+                                        <div class="Modal_SkillLevel Level-90">90%</div>
+                                    </div>
+
+                                    <div class="Modal_SkillName">
+                                       Version Control: Git and Github
+                                    </div>
+                                    <div class="Modal_SkillContainer">
+                                        <div class="Modal_SkillLevel Level-80">80%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
 
         <!--

@@ -55,21 +55,6 @@
         color: inherit;
         }
 
-    .ProjectSection 
-        {
-        width: 100%;
-        height: auto;
-        position: relative;
-        display: block;
-        }
-
-    .ProjectBackground 
-        {
-        width: 100%;
-        background: yellow;
-        height: 500px;
-        }
-
     @keyframes NameBanner
         {
             0%
@@ -538,7 +523,53 @@
         background-size: cover;
         background-repeat: no-repeat;
         }
-    } 
+
+    .SkillArea 
+        {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        box-sizing: border-box;
+        margin: auto;
+        padding: 10px 0;
+        }
+
+    .Skill_Button
+        {
+        flex: 25%;
+        line-height: 50px;
+        min-height: 50px;
+        padding: 20px;
+        margin: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        }
+
+    #FrontEnd
+        {
+        background: darkred;
+        color: white;
+        }
+
+    #BackEnd
+        {
+        background: green;
+        color: white;
+        }
+
+    #CMS
+        {
+        background: gold;
+        color: black;
+        }
+
+    #Team
+        {
+        background: white;
+        color: darkgreen;
+        }
+} 
 
 
 /* ------------------------------------------------------------------*/

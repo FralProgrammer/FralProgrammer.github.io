@@ -1,0 +1,286 @@
+/*
+> > > HEADER MENU
+*/
+
+/*
+        Animations And Keyframes
+*/
+
+@keyframes NameBanner
+    {
+        0%
+            {
+            width: 0%;
+            padding-left: 0px;
+            padding-right: 0px;
+            }
+        100%    
+            {
+            Width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            }
+    }
+
+/*
+        Small Phones
+*/
+
+@media only screen and (max-width: 500px)
+    {
+    .HeadContainer
+        {
+        background: #131313;
+        color: yellow;
+        width: 100%;
+        display: inline-block;
+        }
+
+    .NameBox
+        {
+        display: flex;
+        }
+
+    .NameFirst
+        {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        display: inline-block;
+        font-size: 1.3em;
+        font-family: 'Coiny', cursive;
+        box-sizing: border-box;
+        text-align: center;
+        border-bottom: 5px solid yellow;
+        }
+
+    .Name
+        {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        display: inline-block;
+        font-size: 1.3em;
+        font-family: 'Coiny', cursive;
+        box-sizing: border-box;
+        text-align: center;
+        border-bottom: 5px solid white;
+        }
+
+    .MobileMenu
+        {
+        
+        }
+
+    #MobileMenu 
+        {
+        min-width: 100%;
+        text-align: center;
+        display: block;
+        font-size: 1.5em;
+        font-weight: bold;
+        background: black;
+        padding: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+        }
+
+    .Menu
+        {
+        display: none;
+        }
+
+    .Menu > ul 
+        {
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+        font-size: 1.5em;
+        margin: 0;
+        padding: 0;
+        }
+
+    .Menu > ul > li 
+        {
+        padding: 10px;
+        }
+    }
+
+/*
+        Tablets
+*/
+
+@media only screen and (min-width: 500px) 
+    {
+        .HeadContainer
+            {
+            background: #131313;
+            color: yellow;
+            width: 100%;
+            display: inline-block;
+            padding-bottom: 40px;
+            }
+
+        .NameBox
+            {
+            display: flex;
+            }
+
+        .NameFirst
+            {
+            width: 50%;
+            height: auto;
+            padding: 20px;
+            display: inline-block;
+            font-size: 2em;
+            font-family: 'Coiny', cursive;
+            box-sizing: border-box;
+            text-align: center;
+            border-bottom: 5px solid yellow;
+            margin-bottom: 20px;
+            }
+
+        .Name
+            {
+            width: 50%;
+            height: auto;
+            padding: 20px;
+            display: inline-block;
+            font-size: 2em;
+            font-family: 'Coiny', cursive;
+            box-sizing: border-box;
+            text-align: center;
+            border-bottom: 5px solid white;
+            margin-bottom: 20px;
+            }
+
+        .MobileMenu
+            {
+            display: none;
+            }
+
+        .Menu
+            {
+            display: inline-block !important;
+            width: 100%;
+            }
+
+        .Menu > ul
+            {
+            width: 100%;
+            list-style: none;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+            height: 100%;
+            align-items: center;
+            }
+        }
+
+/*
+        Laptops And Desktops
+*/
+
+@media only screen and (min-width: 992px) 
+    {
+        .HeadContainer
+            {
+            position: sticky;
+            top: 0;
+            background: #131313;
+            color: yellow;
+            width: 100%;
+            display: flex;
+            padding-bottom: 40px;
+            transition: 1s;
+            z-index: 5;
+            }
+    
+        .HeadContainer.small
+            {
+            position: sticky;
+            top: 0;
+            background: #131313;
+            color: yellow;
+            width: 100%;
+            display: flex;
+            padding-bottom: 0;
+            transition: 1s;
+            z-index: 5;
+            }
+    
+        .NameBox
+            {
+            position: relative;
+            width: 50%;
+            height: auto;
+            padding-left: 15px;
+            display: inline-block;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 3em;
+            }
+    
+        .NameFirst
+            {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            height: auto;
+            padding-left: 15px;
+            display: inline-block;
+            font-family: 'Coiny', cursive;
+            font-size: inherit;
+            box-sizing: border-box;
+            text-align: center;
+            border-bottom: 0;
+            margin-bottom: 0;
+            }
+    
+        .Name
+            {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #131313;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            height: auto;
+            padding-left: 15px;
+            display: inline-block;
+            font-family: 'Coiny', cursive;
+            font-size: inherit;
+            box-sizing: border-box;
+            box-shadow: 4px -3px 0px;
+            animation: NameBanner 5s ease-in-out alternate infinite;
+            border-bottom: none;
+            margin-bottom: 0;
+            }
+    
+        .Menu
+            {
+            display: inline-block;
+            width: 50%;
+            }
+    
+        .Menu > ul
+            {
+            width: 100%;
+            list-style: none;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+            height: 100%;
+            align-items: center;
+            }
+        }
