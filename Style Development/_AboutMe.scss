@@ -1,0 +1,156 @@
+    .About_Title {
+        font-size: 1.7em;
+        color: white;
+        text-align: center;
+        background: #2b5c00;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    .ThirdHead {
+        background: #c6be0d;
+    }
+
+    .Contact_Head {
+        color: rgba(0, 0, 0, 0);
+        -webkit-text-stroke: 2px black;
+    }
+
+    .Where {
+        background: #1f1e02;
+    }
+
+    .Contact_Choice {
+        background: black;
+        color: white;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 20px;
+        display: inline-block;
+        width: 50%;
+        font-size: 1.7em;
+        border-top: 2px solid #67db00;
+        border-right: 2px solid #67db00;
+        border-bottom: 2px solid #67db00;
+        border-radius: 0 11px 11px 0;
+        text-align: right;
+    }
+
+    .ContactArea {
+        padding: 50px;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .Contact_1-Detail {
+        display: grid;
+        grid-auto-flow: column;
+        font-size: 2em;
+        color: #c6be0d;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .Contact_2-Detail {
+        display: grid;
+        grid-auto-flow: column;
+        font-size: 2.7em;
+        color: #c6be0d;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #FB:hover {
+        color: blue;
+        transition: 1s;
+    }
+
+    #IG:hover {
+        color: pink;
+        transition: 1s;
+    }
+
+    #TT:hover {
+        color: skyblue;
+        transition: 1s;
+    }
+
+    #DA:hover {
+        color: lime;
+        transition: 1s;
+    }
+
+    .ContactArea > iframe {
+        width: 100%;
+        height: 550px;
+    }
+
+
+@media Only screen and (min-width: 992px){
+
+    .What {
+        background: unset;
+        margin-top: -96px;
+        min-height: 100vh;
+    }
+
+    .SecondHead {
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .About_Title {
+        font-size: 1.7em;
+        color: white;
+        text-align: center;
+        background: black;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    .About_Skillset {
+        color: white;
+    }
+
+    .ThirdHead {
+        background: #c6be0d;
+    }
+
+    .Contact_Head {
+        color: rgba(0, 0, 0, 0);
+        -webkit-text-stroke: 2px black;
+    }
+
+    .Where {
+        background: #1f1e02;
+    }
+
+    .ContactArea {
+        text-align: center;
+    }
+
+
+
+    .Contact_Choice {
+        background: black;
+        color: white;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 20px;
+        display: inline-block;
+        width: 50%;
+        font-size: 1.7em;
+        border-top: 2px solid #67db00;
+        border-right: 2px solid #67db00;
+        border-bottom: 2px solid #67db00;
+        border-radius: 11px;
+        text-align: center;
+    }
+}

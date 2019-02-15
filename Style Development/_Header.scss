@@ -1,286 +1,102 @@
-/*
-> > > HEADER MENU
-*/
+/*=========================================================================================
 
-/*
-        Animations And Keyframes
-*/
+    HEADER
 
-@keyframes NameBanner
-    {
-        0%
-            {
-            width: 0%;
-            padding-left: 0px;
-            padding-right: 0px;
-            }
-        100%    
-            {
-            Width: 100%;
-            padding-left: 15px;
-            padding-right: 15px;
-            }
-    }
+==========================================================================================*/
 
-/*
-        Small Phones
-*/
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Coiny|Hanalei+Fill|Istok+Web|Luckiest+Guy|Nova+Flat|Righteous');
 
-@media only screen and (max-width: 500px)
-    {
-    .HeadContainer
-        {
-        background: #131313;
-        color: yellow;
-        width: 100%;
-        display: inline-block;
-        }
-
-    .NameBox
-        {
-        display: flex;
-        }
-
-    .NameFirst
-        {
-        width: 100%;
-        height: auto;
-        padding: 20px;
-        display: inline-block;
-        font-size: 1.3em;
-        font-family: 'Coiny', cursive;
-        box-sizing: border-box;
-        text-align: center;
-        border-bottom: 5px solid yellow;
-        }
-
-    .Name
-        {
-        width: 100%;
-        height: auto;
-        padding: 20px;
-        display: inline-block;
-        font-size: 1.3em;
-        font-family: 'Coiny', cursive;
-        box-sizing: border-box;
-        text-align: center;
-        border-bottom: 5px solid white;
-        }
-
-    .MobileMenu
-        {
-        
-        }
-
-    #MobileMenu 
-        {
-        min-width: 100%;
-        text-align: center;
-        display: block;
-        font-size: 1.5em;
-        font-weight: bold;
-        background: black;
-        padding: 10px;
-        box-sizing: border-box;
-        cursor: pointer;
-        }
-
-    .Menu
-        {
-        display: none;
-        }
-
-    .Menu > ul 
-        {
-        text-decoration: none;
-        list-style: none;
-        text-align: center;
-        font-size: 1.5em;
+    body {
         margin: 0;
         padding: 0;
-        }
-
-    .Menu > ul > li 
-        {
-        padding: 10px;
-        }
+        font-family: 'Istok Web', sans-serif;
     }
 
-/*
-        Tablets
-*/
+    img {
+        width: 100%;
+        display: block;
+    }
 
-@media only screen and (min-width: 500px) 
-    {
-        .HeadContainer
-            {
-            background: #131313;
-            color: yellow;
-            width: 100%;
-            display: inline-block;
-            padding-bottom: 40px;
-            }
+    a, a:hover, a:focus, a:visited {
+        text-decoration: none;
+        color:inherit;
+    }
 
-        .NameBox
-            {
-            display: flex;
-            }
+    .Sum {
+        background: url('./Images/HeaderBeautyDT.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        text-align: center;
+    }
 
-        .NameFirst
-            {
-            width: 50%;
-            height: auto;
-            padding: 20px;
-            display: inline-block;
-            font-size: 2em;
-            font-family: 'Coiny', cursive;
-            box-sizing: border-box;
-            text-align: center;
-            border-bottom: 5px solid yellow;
-            margin-bottom: 20px;
-            }
+    .Intro_Head {
+        display: inline-block;
+        color: white;
+        text-align: left;
+        padding: 10px;
+        padding-top: 40vh;
+        box-sizing: border-box;
+        font-family: 'Righteous', cursive;
+        font-size: 1.3em;
+    }
 
-        .Name
-            {
-            width: 50%;
-            height: auto;
-            padding: 20px;
-            display: inline-block;
-            font-size: 2em;
-            font-family: 'Coiny', cursive;
-            box-sizing: border-box;
-            text-align: center;
-            border-bottom: 5px solid white;
-            margin-bottom: 20px;
-            }
+    .ContactMe {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 5;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 5px lime;
+        background: rgba(0, 0, 0, 0.5);
+        font-family: 'Luckiest Guy', cursive;
+        text-shadow: 2px 2px black;
+        transition: 1s;
+        letter-spacing: 3px;
+    }
 
-        .MobileMenu
-            {
-            display: none;
-            }
+    .ContactMe:hover {
+        background: white;
+        color: black;
+        text-shadow: 2px 2px lime;
+    }
 
-        .Menu
-            {
-            display: inline-block !important;
-            width: 100%;
-            }
+    .Intro_Head span:nth-of-type(1) {
+        margin: 0;
+    }
 
-        .Menu > ul
-            {
-            width: 100%;
-            list-style: none;
-            position: relative;
-            display: flex;
-            justify-content: space-evenly;
-            margin: 0;
-            padding: 0;
-            font-size: 1.5em;
-            height: 100%;
-            align-items: center;
-            }
-        }
+    .Intro_Head span:not(:nth-of-type(1)) {
+        margin-left: 10px;
+    }
 
-/*
-        Laptops And Desktops
-*/
+@media Only Screen and (min-width: 600px) {
+    .Intro_Head {
+        font-size: 1.7em;
+    }
 
-@media only screen and (min-width: 992px) 
-    {
-        .HeadContainer
-            {
-            position: sticky;
-            top: 0;
-            background: #131313;
-            color: yellow;
-            width: 100%;
-            display: flex;
-            padding-bottom: 40px;
-            transition: 1s;
-            z-index: 5;
-            }
-    
-        .HeadContainer.small
-            {
-            position: sticky;
-            top: 0;
-            background: #131313;
-            color: yellow;
-            width: 100%;
-            display: flex;
-            padding-bottom: 0;
-            transition: 1s;
-            z-index: 5;
-            }
-    
-        .NameBox
-            {
-            position: relative;
-            width: 50%;
-            height: auto;
-            padding-left: 15px;
-            display: inline-block;
-            box-sizing: border-box;
-            text-align: center;
-            font-size: 3em;
-            }
-    
-        .NameFirst
-            {
-            position: relative;
-            top: 0;
-            left: 0;
-            width: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            height: auto;
-            padding-left: 15px;
-            display: inline-block;
-            font-family: 'Coiny', cursive;
-            font-size: inherit;
-            box-sizing: border-box;
-            text-align: center;
-            border-bottom: 0;
-            margin-bottom: 0;
-            }
-    
-        .Name
-            {
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #131313;
-            width: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            height: auto;
-            padding-left: 15px;
-            display: inline-block;
-            font-family: 'Coiny', cursive;
-            font-size: inherit;
-            box-sizing: border-box;
-            box-shadow: 4px -3px 0px;
-            animation: NameBanner 5s ease-in-out alternate infinite;
-            border-bottom: none;
-            margin-bottom: 0;
-            }
-    
-        .Menu
-            {
-            display: inline-block;
-            width: 50%;
-            }
-    
-        .Menu > ul
-            {
-            width: 100%;
-            list-style: none;
-            position: relative;
-            display: flex;
-            justify-content: space-evenly;
-            margin: 0;
-            padding: 0;
-            font-size: 1.5em;
-            height: 100%;
-            align-items: center;
-            }
-        }
+    div.Intro_Head span:nth-of-type(1) {
+        margin-left: 0;
+    }
+
+    div.Intro_Head span:nth-of-type(2) {
+        margin-left: 30px;
+    }
+
+    div.Intro_Head span:nth-of-type(3) {
+        margin-left: 70px;
+    }
+
+    div.Intro_Head span:nth-of-type(4) {
+        margin-left: 140px;
+    }
+}
+   
+@media Only Screen and (min-width: 992px) {
+    .Intro_Head {
+        font-size: 2.5em;
+    }
+
+}

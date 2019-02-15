@@ -1,327 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Nigel Wilkins | Fral Programmer - My Portfolio</title>
-        <link rel="stylesheet" href="./Style Development/Style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="Menus.js"></script>
-
-            <!--
-                Inline Functions
-                    Header/Menu Shrink During Scroll
-                
-                External Functions
-                    Mobile Menu Control -> (Menu.js)
-            -->
-        <script type="text/javascript">
-                $(window).on('scroll', function(){
-                    if($(window).scrollTop()) {
-                        $('.HeadContainer').addClass('small');
-                    }
-                    else {
-                        $('.HeadContainer').removeClass('small');
-                    }
-                });
-        </script>
-
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Nigel Wilkins | Fral Programmer Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="main.js"></script>
     </head>
-
-
+    
     <body>
-            <!-- 
-                Navagation And Information Section: For Links and Informational Headlines
-            -->
-        <header class="HeadContainer Century">
-            <div class="NameBox">
-                <div class="NameFirst">
-                    Nigel Wilkins
-                </div>
-                <div class="Name">
-                    Fral Programmer
-                </div>
+        
+        <header class="Sum">
+            <div class="Intro_Head">
+                <span>
+                    Greetings,
+                </span>
+                <br>
+                <span>
+                    My name is Nigel Wilkins,
+                </span>
+                <br>
+                <span>
+                    an ambitious Web Developer!
+                </span>
+                <br>
+                <span>
+                    With 10+ years of experience.
+                </span>
             </div>
-            <div class="MobileMenu">
-                <div id="MobileMenu">
-                    Menu
+            <a href="#Contact">
+                <div class="ContactMe">
+                    Let's Talk
                 </div>
-            </div>
-            <div class="Menu">
-                <ul>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#Skillset">Skillset</a></li>
-                    <li><a href="#Services">Services</a></li>
-                    <li><a href="#AboutMe">About Me</a></li>
-                </ul>
-            </div>
+            </a>
         </header>
 
-        <!--
-                HIRE ME SECTION - Call To Action
-        -->
-        <section class="Hireme">
-            <div class="HireArea_Background">
-                <picture>
-                    <source srcset="./Photos/500PXTemp.jpg" media="(max-width: 800px)">
-                    <source srcset="./Photos/FacebookBanner.jpg">
-                    <img src="./Photos/FacebookBanner.jpg">
-                </picture>
-
-            </div>
-            <div class="HireArea">
-                <div class="HireArea_Description">
-                    Looking For Work.
-                    <br>
-                    Hire Me
+        <section class="Who">
+            <div class="Header MainHead">
+                <div class="Title_Head">
+                    My <span style="color: #67DB00;">Work</span>
                 </div>
 
-                <div class="HireArea_CTA">
-                    <div class="Button HM_Action MainFont">
-                        Hire <br> Me
-                    </div>
-
-                    <div class="Button HM_Action MainFont">
-                        Free <br> Consultation
-                    </div> 
+                <div class="Describe_Head">
+                    Check out the amazing projects I've worked on.
                 </div>
             </div>
+
+            <div class="Content MainContent">
+                <div class="Project_ImageBox">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="./Images/Filteredarts_Preview.png">
+                        <source srcset="./Images/Filteredarts_Preview.png">
+                        <img src="./Images/Filteredarts_Preview.png" alt="Filtered Arts">
+                    </picture>
+                </div>
+                <div class="Project_DetailBox">
+                    <div class="Project_Title">
+                        Filtered Arts
+                    </div>
+                    <div class="Project_Skillset">
+                        Responsive Design, 
+                        Wordpress CMS, 
+                        PHP, 
+                        HTML5 & CSS3
+                    </div>
+                    
+                    <div class="Buttons">
+                        <a href="https://filteredarts.com">
+                            <div class="Button">
+                                Visit Website
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!--
-            PROJECT SECTION
-        -->
-        <section class="Section-Full Lightening">
-                <span id="Projects" class="Anchor"></span> <!--Anchor Fix For Sticky Menu Issue-->
-                <div class="Header-Responsive Darkness_Header">
-                    My Projects
-                </div>
-
-                <div class="ContentContain">
-                    <div class="Content FA">
-                        <img src="Photos/Portfo-FA.jpg">
-                        <div class="ContentInfo">
-                            <div class="ContentTitle">
-                                Filtered Arts
-                            </div>
-                            <div class="ContentSkillSet">
-                                #HTML5 #CSS3 #PHP #Wordpress #JQuery
-                            </div>
-                            <div class="ContentDescription">
-                                Web Design & Web Development
-                            </div>
-                        </div>
-                    </div>
-                    <div class="Content BSJ">
-                        <img src="Photos/Portfo-BSJ.jpg">
-                        <div class="ContentInfo">
-                                <div class="ContentTitle">
-                                    Bornspired Journey
-                                </div>
-                                <div class="ContentSkillSet">
-                                    #HTML5 #CSS3 #PHP #Wordpress #JQuery
-                                </div>
-                                <div class="ContentDescription">
-                                    Web Design & Web Development
-                                </div>
-                            </div>
-                    </div>
-                    <div class="Content"></div>
-                    <div class="Content"></div>
-                </div>
+        <section class="Break">
+            <div class="Intro_Head">
+                <span>
+                    Stories are what makes us unique,
+                </span>
+                <br>
+                <span>
+                    Sharing them brings us together.
+                </span>
+            </div>
         </section>
 
-        <!--
-            SKILLSET SECTION
-        -->
-        <section class="Section-Full Darkness">
-                <span id="Skillset" class="Anchor"></span> <!--Anchor Fix For Sticky Menu Issue-->
-                <div class="Header-Responsive Lightening_Header">
-                    My Skillset
+        <section class="What">
+            <div class="Header SecondHead">
+                <div class="Title_Head">
+                    My <span style="color: #67DB00;">Story</span>
                 </div>
 
-                <div class="SkillArea MainFont">
-                    <!--Open FrontEnd Modal-->
-                    <div id="FrontEnd" class="Skill_Button">FrontEnd Development</div>
+                <div class="Describe_Head">
+                    Wanna know something interesting about me?
+                </div>
+            </div>
 
-                    <!-- FrontEnd Modal -->
-                    <div id="FrontEndModal" class="Full-Modal">
-                        <!-- FrontEnd Modal Content -->
-                        <div class="Modal-Content">
-                            <span class="Modal_close">&times;</span>
-                            <div class="Modal_Header">
-                                Frontend Coding Skills
-                            </div>
-                            <div class="Modal_SkillBox">
-                                <div class="Modal_SkillName">
-                                    HTML5
-                                </div>
-                                <div class="Modal_SkillContainer">
-                                    <div class="Modal_SkillLevel Level-100">100%</div>
-                                </div>
-
-                                <div class="Modal_SkillName">
-                                    CSS3
-                                </div>
-                                <div class="Modal_SkillContainer">
-                                    <div class="Modal_SkillLevel Level-100">100%</div>
-                                </div>
-
-                                <div class="Modal_SkillName">
-                                    Javascript
-                                </div>
-                                <div class="Modal_SkillContainer">
-                                    <div class="Modal_SkillLevel Level-85">85%</div>
-                                </div>
-
-                                <div class="Modal_SkillName">
-                                    JQuery
-                                </div>
-                                <div class="Modal_SkillContainer">
-                                    <div class="Modal_SkillLevel Level-80">80%</div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="Content MainContent">
+                <div class="Project_ImageBox">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="./Images/Illustration.png">
+                        <source srcset="./Images/Illustration.png">
+                        <img src="./Images/Illustration.png" alt="Filtered Arts">
+                    </picture>
+                </div>
+                <div class="Project_DetailBox">
+                    <div class="About_Title">
+                        About Me
                     </div>
-                    
-                    <!--Open BackEnd Modal-->
-                    <div id="BackEnd" class="Skill_Button">BackEnd Development</div>
-                    
-                    <!-- BackEnd Modal -->
-                    <div id="BackEndModal" class="Full-Modal">
-                        <!-- BackEnd Modal Content -->
-                        <div class="Modal-Content">
-                            <span class="Modal_close">&times;</span>
-                            <div class="Modal_Header">
-                                Backend Coding Skills
-                            </div>
-                            <div class="Modal_SkillBox">
-                                <div class="Modal_SkillName">
-                                    PHP
-                                </div>
-                                <div class="Modal_SkillContainer">
-                                    <div class="Modal_SkillLevel Level-30">30%</div>
-                                </div>
-
-                                <div class="Modal_SkillName">
-                                    Python
-                                </div>
-                                <div class="Modal_SkillContainer">
-                                    <div class="Modal_SkillLevel Level-10">10%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Open Team Modal-->
-                    <div id="FrameWork" class="Skill_Button">FrameWorks</div>
-                    
-                    <!-- Team Modal -->
-                    <div id="FrameWorkModal" class="Full-Modal">
-                        <!-- Team Modal Content -->
-                        <div class="Modal-Content">
-                            <span class="Modal_close">&times;</span>
-                            <div class="Modal_Header">
-                                Frameworks
-                            </div>
-                            <div class="Modal_SkillBox">
-                                <div class="Modal_SkillName">
-                                    Bootstap
-                                </div>
-                                <div class="Modal_SkillContainer">
-                                    <div class="Modal_SkillLevel Level-100">100%</div>
-                                </div>
-
-                                <div class="Modal_SkillName">
-                                    AngularJs
-                                </div>
-                                <div class="Modal_SkillContainer">
-                                    <div class="Modal_SkillLevel Level-80">80%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!--Open CMS Modal-->
-                    <div id="CMS" class="Skill_Button">Content Manageagement System</div>
-                    
-                    <!-- CMS Modal -->
-                    <div id="CMSModal" class="Full-Modal">
-                            <!-- CMS Modal Content -->
-                            <div class="Modal-Content">
-                                <span class="Modal_close">&times;</span>
-                                <div class="Modal_Header">
-                                    Content Manageagement Systems
-                                </div>
-                                <div class="Modal_SkillBox">
-                                    <div class="Modal_SkillName">
-                                        Wordpress
-                                    </div>
-                                    <div class="Modal_SkillContainer">
-                                        <div class="Modal_SkillLevel Level-60">60%</div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    
-                    <!--Open Team Modal-->
-                    <div id="Team" class="Skill_Button">Working With A Team</div>
-                    
-                    <!-- Team Modal -->
-                    <div id="TeamModal" class="Full-Modal">
-                            <!-- Team Modal Content -->
-                            <div class="Modal-Content">
-                                <span class="Modal_close">&times;</span>
-                                <div class="Modal_Header">
-                                    Working With Teams
-                                </div>
-                                <div class="Modal_SkillBox">
-                                    <div class="Modal_SkillName">
-                                        Communication
-                                    </div>
-                                    <div class="Modal_SkillContainer">
-                                        <div class="Modal_SkillLevel Level-100">100%</div>
-                                    </div>
-
-                                    <div class="Modal_SkillName">
-                                        Turn Around
-                                    </div>
-                                    <div class="Modal_SkillContainer">
-                                        <div class="Modal_SkillLevel Level-90">90%</div>
-                                    </div>
-
-                                    <div class="Modal_SkillName">
-                                       Version Control: Git and Github
-                                    </div>
-                                    <div class="Modal_SkillContainer">
-                                        <div class="Modal_SkillLevel Level-80">80%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="About_Skillset">
+                            I'm a self-taught Web Developer, with a great scale of other skills
+                            under my belt! I dream of one day running a company that can stand
+                            with Disney, Cartoon Network, Sony Pictures Animation, and other
+                            entertainment kings and queens.
+                            <br><br>
+                            It's elementary really, Dr. Watson, at least that's where 
+                            it all started. I was first introduced to Web Development 
+                            by my tech instructor in 5th grade and from that point on I've
+                            become obsessed with learning more! What better field 
+                            for a person who loves constant adventure then tech!
+                            <br><br>
+                            I am currently building my business from scratch and 
+                            Looking to work with amazing people who I can offer
+                            value to in exchange, satisfy my never dying hunger
+                            to learn and explore. Please, help me continue my
+                            adventure and strengthen my story.
+                            
                     </div>
                 </div>
+            </div>
         </section>
 
-        <!--
-            SERVICES SECTION
-        -->
-        <section class="Section-Full Lightening">
-                <span id="Services" class="Anchor"></span> <!--Anchor Fix For Sticky Menu Issue-->
-                <div class="Header-Responsive Darkness_Header">
-                    Services I Offer
+        <section class="Where">
+            <div class="Header ThirdHead">
+                <div id="Contact" class="Title_Head Contact_Head">
+                    Contact <span style="color: #67DB00;">Me</span>
                 </div>
-        </section>
 
-        <!--
-            ABOUT ME SECTION
-        -->
-        <section class="Section-Full Darkness">
-                <span id="AboutMe" class="Anchor"></span> <!--Anchor Fix For Sticky Menu Issue-->
-                <div class="Header-Responsive Lightening_Header">
-                    Learn About Me
+                <div class="Describe_Head">
+                    Do you have a project or job you think I'll like?
+                </div>
+            </div>
+            <div class="Content ContactArea">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScgsngUta6n4fKMbd4VwDfX58t6IAB1O48lMW-ANReNahZY1A/viewform?embedded=true" width="640" height="1117" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+                    <div class="Contact_Choice">
+                       Email Me
+                    </div>
+
+                    <div class="Contact_1-Detail">
+                        <a href="mailto:NigelWilkinsIT@outlook.com" target="_top">
+                            <i class="fas fa-mail-bulk"> NigelWilkinsIT@outlook.com </i>
+                        </a>
+                    </div>
+
+                    <div class="Contact_Choice">
+                       Social Media
+                    </div>
+
+                    <div class="Contact_2-Detail">	
+                        <i id="TT" class="fab fa-twitter"></i>
+                        <i id="FB" class="fab fa-facebook"></i>
+                        <i id="IG" class="fab fa-instagram"></i>
+                        <i id="DA" class="fab fa-deviantart"></i>
+                    </div>
                 </div>
         </section>
 
